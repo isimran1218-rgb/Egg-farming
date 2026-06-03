@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) scale(0.8) rotate(-4deg);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(-40px) scale(1.1) rotate(4deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px) scale(1) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+.animate-float {
+  animation: float 1.1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+
+/* Custom scrollbar configurations for high-end immersion */
+#scroll_content_viewport::-webkit-scrollbar {
+  width: 4px;
+}
+#scroll_content_viewport::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+}
+#scroll_content_viewport::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.25);
+  border-radius: 9999px;
+}
+#scroll_content_viewport::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.55);
+}
+
+#withdrawal_logs::-webkit-scrollbar {
+  width: 4px;
+}
+#withdrawal_logs::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.4);
+}
+#withdrawal_logs::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.25);
+  border-radius: 9999px;
+}
+#withdrawal_logs::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.55);
+}

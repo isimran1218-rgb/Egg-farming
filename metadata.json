@@ -1,0 +1,6 @@
+{
+  "name": "Egg Farming",
+  "description": "A premium Telegram-style tap-to-earn clicker game where users hatch eggs to earn rewards, purchase mine cards, refer friends, and withdraw cryptocurrency (under development).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
